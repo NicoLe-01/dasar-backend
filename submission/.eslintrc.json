@@ -11,6 +11,5 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-        "object-curly-spacing": ["error", "never"]
     }
 }
