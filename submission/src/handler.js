@@ -81,7 +81,7 @@ const addBookHandler = (request, h) => {
 const getAllBooksHandler = (request, h) => {
   if (request.query.name) {
     const result = books.filter((book) => {
-      if (book.name.toLowerCase() === request.query.name.toLowerCase()) {
+      if (book.name.toLowerCase().includes(request.query.name.toLowerCase())) {
         return book;
       }
     });
